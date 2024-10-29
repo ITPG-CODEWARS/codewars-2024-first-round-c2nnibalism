@@ -1,0 +1,323 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fdfffffc;
+    color: #3497b3;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    color: #262626;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 2000px;
+    max-width: 4000px;
+    margin: auto;
+}
+
+/* Navbar */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 10px 10px;
+    font-size: 50px;
+    z-index: 1000;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background-color: #fdfffffc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-menu {
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-nav .logo {
+    width: 72px;
+    margin-top: 17px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    padding: 0 10px;
+}
+
+.main-nav ul li a {
+    padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 3px solid #176d85;
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+  
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #15577d;
+    color: #fff;
+    font-size: 15px;;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .dark {
+    color: #fff;
+  }
+  
+  .dark .btn {
+    background: #f4f4f4;
+    color: #01090c;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+    background: #2B3044;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 15px;
+    margin-top: 100px;
+  }
+  
+
+
+
+
+  /* Showcase */
+  .showcase {
+    width: 100%;
+    height: 1000px;
+    background: url('trains img (home-gallery)/train\ 1\ \(home\).jpg') no-repeat center center/cover;
+    color:#ffffff ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 350px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  
+  .showcase h2, .showcase p {
+    margin-bottom: 10px;
+  }
+  
+  .showcase .btn {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+
+
+  /* Home cards */
+
+ .line-home-cards {
+  padding-bottom: 40px;
+  width: 100%;
+  
+ }
+
+  .home-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .home-cards img {
+    width: 101%;
+    height: 70%;
+    margin-bottom: 20px;
+  }
+
+  .home-cards-text {
+    margin-top: 100px;
+    color: #0067b8;
+    font-size: 30px;
+  }
+  
+  
+  .home-cards h3 {
+    margin-bottom: 5px;
+    font-size: 35px;
+    color: #0067b8;
+    
+  }
+
+  .home-cards p {
+    font-size: 25px;
+
+  }
+  
+  .home-cards a {
+    display: inline-block;
+    padding-top: 20px;
+    color: #0067b8;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  
+  .home-cards a:hover i {
+    margin-left: 10px;
+  }
+  
+
+
+  
+
+  /* Gallery home */
+
+  .custom-button {
+    background-color: #0067b8;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 835px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #0067b8;
+}
+
+
+.line-gallery {
+  padding-top: 100px ;
+}
+  
+  .gallery{
+    padding: 100px 0;
+    margin: 0 auto;
+    width: 2000px;
+  }
+  
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+  }
+  
+  .item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+    
+    &:hover{
+      flex: 7;
+    }
+  }
+  
+  .item-1 { 
+    background-image: url('trains img (home-gallery)/Orient Express (home-gallery).jpg');
+  }
+  
+  .item-2 { 
+    background-image: url('trains img (home-gallery)/TGV (Train à Grande Vitesse) (home-gallery).jpg');
+  }
+  
+  .item-3 { 
+    background-image: url('trains img (home-gallery)/Shinkansen\ \(Bullet\ Train\)\ \(home-gallery\).webp');
+  }
+  
+  .item-4 { 
+    background-image: url('trains img (home-gallery)/Глетчер Експрес (Швейцария) (gallery).jpg');
+  }
+  
+  .item-5 { 
+    background-image: url('trains img (home-gallery)/Rocky\ Mountaineer\ \(home-gallery\).jpg');
+  }
+  
+
+
+  /* Info */
+  .info {
+    width: 100%;
+    height: 350px;
+    background: url('trains img (home-gallery)/pejzaj\ train\ \(home\).jpg') no-repeat center center/cover;
+  }
+  
+  .info .btn {
+    margin-top: 40px;
+    color: #0064b0 ;
+  }
+
+  .info .content {
+    width: 55%;
+    padding: 100px 0 0 30px;
+    font-size: 20px;
+  }
+  
+ 
+
+  
+
+/* Footer */
+footer {
+  background-color: #2B3044;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
